@@ -3,7 +3,6 @@
 
 
 import csv
-import math
 from typing import List
 
 
@@ -38,13 +37,13 @@ class Server:
             assert isinstance(page, int) and page > 0
             assert isinstance(page_size, int) and page_size > 0
             
-           
-           dataset = self.dataset()
-           start, end  = index_range(page, page_size)
+            
+            dataset = self.dataset()
+            start, end  = index_range(page, page_size)
 
 
-          if start >= len(dataset):
-             return []
+            if start >= len(dataset):
+               return []
           
-         
-          return dataset[start:end] 
+          
+            return dataset[start:end] 
