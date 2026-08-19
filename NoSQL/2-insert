@@ -1,0 +1,5 @@
+// INSERT DOCUMENT INTO COLLECTION
+
+db.school.insertOne({
+name: "Holberton school"
+})
