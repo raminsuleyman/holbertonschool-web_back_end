@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     for method in methods:
         count = collection.count_documents({"method": method})
-        print("\tmethod {}: {}".format(method, count))
+        print("\t{}: {}".format(method, count))
 
     status = collection.count_documents({
         "method": "GET",
